@@ -25,6 +25,10 @@
  */
 function connect(baseParams) {
   // write code here
+
+  return function(extra) {
+    return { ...params, ...extra };
+  };
 }
 
 module.exports = connect;
